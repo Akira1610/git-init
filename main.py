@@ -55,7 +55,6 @@ class Student:
         return mean(self.grades) <= mean(other.grades)
     def __ge__(self, other):
         return mean(self.grades) >= mean(other.grades)
-
 class Mentor:
     def __init__(self, name, surname):
         self.name = name
@@ -90,8 +89,8 @@ class Reviewer(Mentor):
         else:
             return 'Ошибка'
 
-Students = [Student('Kurt', 'Hummel', 'your_gender'),
-            Student('Reachel', 'Berry', 'your_gender')]
+Students = [Student('Ruoy', 'Eman', 'your_gender'),
+            Student('Tom', 'Ford', 'your_gender')]
 Students[0].courses_in_progress += ['Python']
 Students[0].courses_in_progress += ['Git']
 Students[0].finished_courses += ['Introduction to the programming']
@@ -99,14 +98,14 @@ Students[1].courses_in_progress += ['Python']
 Students[1].finished_courses += ['Paint']
 Students[1].finished_courses += ['Calculator']
 
-Lecturers = [Lecturer('Shuster', 'Will'),
-             Lecturer('Silvestr', 'Siu')]
+Lecturers = [Lecturer('Jons', 'Samanta'),
+             Lecturer('Bradshow', 'Kerry')]
 Lecturers[0].courses_attached += ['Python']
 Lecturers[0].courses_attached += ['Java']
 Lecturers[1].courses_attached += ['JS']
 
-Reviewers = [Reviewer('Briar', 'Tony'),
-             Reviewer('Piters', 'Tom')]
+Reviewers = [Reviewer('Nikolaev', 'Nik'),
+             Reviewer('Collins', 'Phil')]
 Reviewers[0].courses_attached += ['Python']
 Reviewers[0].courses_attached += ['Git']
 Reviewers[1].courses_attached += ['Python']
